@@ -1,8 +1,7 @@
-import React from 'react';
-import './Homepage.css'
+import React from "react";
 
 const Homepage = () => {
-    const code1 = `else if (type === "email") {
+  const code1 = `else if (type === "email") {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (value === "") {
             alert("Email must be filled out");
@@ -12,10 +11,8 @@ const Homepage = () => {
             isValid = false;
         }`;
 
-
-
   return (
-    <div className='nameContainer'>
+    <div className="nameContainer">
       <div>
         <p>Hello Reader, I am</p>
         <h1>BARNABAS JAMES O</h1>
@@ -24,15 +21,13 @@ const Homepage = () => {
 
       <div>
         <div>
-            <pre>
-                <code>
-                    {code1}
-                </code>
-            </pre>
+          <pre>
+            <code>{code1}</code>
+          </pre>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
