@@ -1,41 +1,42 @@
-import {
-  RouterProvider,
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  BrowserRouter,
-  Routes,
-} from "react-router-dom";
-import React from "react";
-import Homepage from "./pages/Homepage";
-import Mainlayout from "./Layouts/Mainlayout";
-import Contactme from "./pages/Contactme";
-import Projects from "./pages/Projects";
-import Notfound from "./pages/Notfound";
-import Aboutlayout from "./Layouts/Aboutlayout";
-import Personal from "./pages/Aboutpages/Personal";
-import Education from "./pages/Aboutpages/Education";
-import Interests from "./pages/Aboutpages/Interests";
+import { RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Mainlayout />}>
-      <Route index element={<Homepage />} />
-      <Route path="/aboutme" element={<Aboutlayout />}>
-        <Route index element={<Personal />} />
-        <Route path="personal" element={<Personal />} />
-        <Route path="education" element={<Education />} />
-        <Route path="interests" element={<Interests />} />
-      </Route>
-      <Route path="/contactme" element={<Contactme />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="*" element={<Notfound />} />
-    </Route>
-  )
-);
+import { router } from "./routes/Routes";
+import { createContext, useState, useEffect } from "react";
+
+export const SiteContext = createContext();
+
+const ContextProvider = ({ children }) => {
+  const [navOpen, setNavOpen] = useState(false);
+
+  function useMediaQuery(query) {
+    const [matches, setMatches] = useState(false);
+
+    useEffect(() => {
+      const mediaQueryList = window.matchMedia(query);
+      const listener = () => setMatches(mediaQueryList.matches);
+
+      mediaQueryList.addEventListener("change", listener);
+      setMatches(mediaQueryList.matches); // Initial check
+
+      return () => mediaQueryList.removeEventListener("change", listener);
+    }, [query]);
+
+    return matches;
+  }
+
+  return (
+    <SiteContext.Provider value={{ navOpen, setNavOpen, useMediaQuery }}>
+      {children}
+    </SiteContext.Provider>
+  );
+};
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ContextProvider>
+      <RouterProvider router={router} />
+    </ContextProvider>
+  );
 };
 
 export default App;

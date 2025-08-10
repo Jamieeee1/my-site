@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { SiteContext } from "../App";
+import MobileNav from "../components/MobileNav";
 
 const Mainlayout = () => {
+  const { navOpen } = useContext(SiteContext);
   return (
     <>
-      <div className="Navdiv">
-        <Navbar />
-      </div>
-      <div className="Body">
+      <Navbar />
+      <div className="outlet-div">
+        {navOpen && <MobileNav />}
         <Outlet />
       </div>
-      <div className="Footer">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 };
