@@ -97,6 +97,20 @@ const Contactme = () => {
           </div>
         )}
       </div>
+
+      <form
+        action="https://formspree.io/f/xkgvvppj"
+        id="contact-form"
+        method="post"
+      >
+        <label htmlFor="name">Name:</label>
+        <input type="text" name="name" />
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" />
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id=""></textarea>
+        <button onClick={() => e.preventDefault()}>Summit</button>
+      </form>
     </div>
   );
 };

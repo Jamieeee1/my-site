@@ -257,6 +257,11 @@ a {
   gap: 0.6em;
 }
 
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
 // .about-nav {
 //   display: flex;
 //   flex-direction: column;
