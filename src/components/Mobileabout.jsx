@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 
-const spans = ["personal", "professional", "hobbies", "contacts"];
+// const spans = ["personal", "professional", "hobbies", "contacts"];
 
 const Mobileabout = () => {
   const [isOpen, setisOpen] = useState({
@@ -87,7 +87,7 @@ const Mobileabout = () => {
           {isOpen.hobbies ? <FaAngleDown /> : <FaAngleRight />} Hobbies
         </span>
       </div>
-      <div className="mobile-about-minidivs">
+      {/* <div className="mobile-about-minidivs">
         <span
           className="mobile-about-bottons"
           onClick={() => toggle("contacts")}
@@ -95,7 +95,7 @@ const Mobileabout = () => {
           {" "}
           {isOpen.contacts ? <FaAngleDown /> : <FaAngleRight />} Contacts
         </span>
-      </div>
+      </div> */}
     </div>
   );
 };

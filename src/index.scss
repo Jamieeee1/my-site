@@ -216,12 +216,14 @@ a {
   gap: 0.3em;
 }
 
-.mobile-about-header {
+.mobile-about-header,
+.contact-mobile-header {
   padding: 1.3em;
   font-size: 1.3rem;
 }
 
-.mobile-about-bottons {
+.mobile-about-bottons,
+.contact-drop-buttons {
   padding: 1em;
   font-size: 1.1rem;
   color: var(--nav-text);
@@ -234,7 +236,8 @@ a {
   }
 }
 
-.mobile-about-minidivs {
+.mobile-about-minidivs,
+.contacts-drop-div {
   display: flex;
   flex-direction: column;
 }
@@ -246,6 +249,12 @@ a {
 .mobile-about-inner p {
   text-align: justify;
   padding: 0.5em;
+}
+
+.contacts-main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
 }
 
 // .about-nav {
