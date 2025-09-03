@@ -218,21 +218,21 @@ a {
 
 .mobile-about-header,
 .contact-mobile-header {
-  padding: 1.3em;
-  font-size: 1.3rem;
+  padding: 0.8em;
+  font-size: 1.2rem;
 }
 
 .mobile-about-bottons,
 .contact-drop-buttons {
-  padding: 1em;
-  font-size: 1.1rem;
+  padding: 0.8em;
+  font-size: 1rem;
   color: var(--nav-text);
   display: flex;
   align-items: center;
   background-color: var(--inner-mobile-nav);
 
   svg {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -262,6 +262,15 @@ a {
   flex-direction: column;
 }
 
+.contact-me-div {
+  flex: 1;
+}
+
+.contacts-drop-div {
+  padding: 0.5em;
+  gap: 0.3em;
+}
+
 // .about-nav {
 //   display: flex;
 //   flex-direction: column;
@@ -287,6 +296,47 @@ a {
 //     justify-content: space-between;
 //   }
 // }
+
+.fs-form {
+  display: grid;
+  gap: 0.7em;
+  padding: 0.6em;
+}
+
+.fs-field {
+  display: grid;
+  gap: 0.3em;
+}
+
+.fs-description {
+  font-size: 0.7rem;
+  color: var(--yellow);
+}
+
+.fs-input,
+.fs-textarea {
+  padding: 0.5em;
+  background-color: inherit;
+  box-shadow: none;
+  border: $borders;
+  border-radius: 0.4em;
+  color: inherit;
+}
+
+.fs-button-group {
+  display: flex;
+}
+
+.fs-button {
+  padding: 0.4rem 0.6rem;
+  margin-right: 0.4em;
+  border-radius: 0.4rem;
+  background-color: var(--yellow);
+}
+
+.fs-button:hover {
+  background-color: var(--my-name);
+}
 
 @media (width >= 768px) {
   .outlet-div {

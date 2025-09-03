@@ -8,6 +8,7 @@ import {
   FaAngleRight,
   FaAngleDown,
 } from "react-icons/fa";
+import ContactForm from "../components/ContactForm";
 
 const Contactme = () => {
   const { useMediaQuery } = useContext(SiteContext);
@@ -22,7 +23,7 @@ const Contactme = () => {
   };
   return (
     <div className="contacts-main-div">
-      <span className="contact-mobile-header">Contacts</span>
+      <span className="contact-mobile-header">_contacts</span>
       <div>
         <span
           onClick={() => toggle("buttonone")}
@@ -97,20 +98,9 @@ const Contactme = () => {
           </div>
         )}
       </div>
-
-      <form
-        action="https://formspree.io/f/xkgvvppj"
-        id="contact-form"
-        method="post"
-      >
-        <label htmlFor="name">Name:</label>
-        <input type="text" name="name" />
-        <label htmlFor="email">Email</label>
-        <input type="text" name="email" />
-        <label htmlFor="message">Message</label>
-        <textarea name="message" id=""></textarea>
-        <button onClick={() => e.preventDefault()}>Summit</button>
-      </form>
+      <div className="contact-me-div">
+        <ContactForm />
+      </div>
     </div>
   );
 };

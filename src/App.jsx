@@ -1,4 +1,5 @@
 import { RouterProvider } from "react-router-dom";
+import { FormspreeProvider } from "@formspree/react";
 
 import { router } from "./routes/Routes";
 import { createContext, useState, useEffect } from "react";
@@ -34,7 +35,9 @@ const ContextProvider = ({ children }) => {
 const App = () => {
   return (
     <ContextProvider>
-      <RouterProvider router={router} />
+      <FormspreeProvider project="xkgvvppj">
+        <RouterProvider router={router} />
+      </FormspreeProvider>
     </ContextProvider>
   );
 };
