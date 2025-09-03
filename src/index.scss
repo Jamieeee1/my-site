@@ -254,7 +254,7 @@ a {
 .contacts-main-div {
   display: flex;
   flex-direction: column;
-  gap: 0.6em;
+  gap: 0.5em;
 }
 
 #contact-form {
@@ -263,6 +263,8 @@ a {
 }
 
 .contact-me-div {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -340,12 +342,20 @@ a {
 
 .contact-succeeded {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-inline: 5em;
+  gap: 1.3em;
+
+  p {
+    text-align: center;
+  }
 }
 
 .contact-succeeded-p {
   color: white;
+  font-size: 1.2rem;
 }
 
 @media (width >= 768px) {
