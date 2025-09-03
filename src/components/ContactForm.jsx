@@ -5,10 +5,10 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xkgvvppj");
   if (state.succeeded) {
     return (
-      <>
-        <p>Thank you!</p>
+      <div className="contact-succeeded">
+        <p className="contact-succeeded-p">Thank you!</p>
         <p>Your message has been accepted. You will recieve an answer soon.</p>
-      </>
+      </div>
     );
   }
   return (

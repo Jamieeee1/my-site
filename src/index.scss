@@ -300,7 +300,7 @@ a {
 .fs-form {
   display: grid;
   gap: 0.7em;
-  padding: 0.6em;
+  padding: 0.6em 0.8em;
 }
 
 .fs-field {
@@ -336,6 +336,16 @@ a {
 
 .fs-button:hover {
   background-color: var(--my-name);
+}
+
+.contact-succeeded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-succeeded-p {
+  color: white;
 }
 
 @media (width >= 768px) {
