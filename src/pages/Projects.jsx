@@ -16,7 +16,8 @@ const Projects = () => {
     },
     {
       name: "Multi-Step Form",
-      description: "",
+      description:
+        "Validates input from user, and also gives a full breakdown of everything selected.",
       stack: ["HTML5", "JavaScript", "CSS3"],
       liveSite: "https://multistepform-gamma.vercel.app/",
       githubrepo: "https://github.com/Jamieeee1/Multistep",
@@ -25,7 +26,8 @@ const Projects = () => {
     },
     {
       name: "Conference Ticket Generator",
-      description: "",
+      description:
+        "Generates a ticket for attendees using input provided by the user.",
       stack: ["HTML5", "JavaScript", "TailwindCSS"],
       liveSite: "https://shopping-cart-one-puce.vercel.app/",
       githubrepo:
@@ -35,7 +37,7 @@ const Projects = () => {
     },
     {
       name: "Landing Page",
-      description: "",
+      description: "A simple landing page.",
       stack: ["HTML5", "JavaScript", "TailwindCSS"],
       liveSite: "https://manage-landing-page-master-gamma.vercel.app/",
       githubrepo: "https://github.com/Jamieeee1/manage-landing-page-master",
@@ -44,7 +46,8 @@ const Projects = () => {
     },
     {
       name: "Shoping Cart",
-      description: "",
+      description:
+        "Models a fully fucntional shopping site. It features includes selecting items, manipulating amounts and provision of a summary on checkout. ",
       stack: ["HTML5", "JavaScript", "React", "TailwindCSS"],
       liveSite: "https://shopping-cart-one-puce.vercel.app/",
       githubrepo: "https://github.com/Jamieeee1/Shopping-Cart",
@@ -53,7 +56,8 @@ const Projects = () => {
     },
     {
       name: "Random Quote Generator",
-      description: "",
+      description:
+        "A random quote is generated using once the site is loaded and also on request. This is done with the asistance of a restful api ",
       stack: ["HTML5", "JavaScript", "CSS3", "React"],
       liveSite: "https://random-quote-react-one.vercel.app/",
       githubrepo:
