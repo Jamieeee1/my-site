@@ -2,8 +2,9 @@ import React from "react";
 
 const Project = ({ work, index }) => {
   return (
-    <div>
-      <span> Project {index + 1} </span>
+    <div style={{ maxWidth: "370px" }}>
+      <span className="project-num"> Project {index + 1} </span>{" "}
+      <span> {`// _${work.name}`} </span>
       <div className="project-div">
         <div className="project-div-picture">
           <img
@@ -12,8 +13,14 @@ const Project = ({ work, index }) => {
             className="project-image"
           />
         </div>
-        <div></div>
-        <p> {work.name} </p>
+        <div>
+          <p> {work.description} </p>
+          <div className="link-button-holder">
+            <a href={work.liveSite} target="_blank" className="link-button">
+              view-project
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
