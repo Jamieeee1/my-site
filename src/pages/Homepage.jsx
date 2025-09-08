@@ -22,7 +22,7 @@ const Homepage = () => {
           </p>
         </div>
       </div>
-      <div className="home-div-2">
+      {/* <div className="home-div-2">
         <div className="home-div-img">
           <img src={codeSnippet} alt="" />
         </div>
@@ -32,7 +32,7 @@ const Homepage = () => {
         <div className="home-div-img">
           <img src={codeSnippet} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

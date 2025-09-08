@@ -93,13 +93,13 @@ a {
   display: none;
 }
 
-// .nav-div a.inactive-menu {
-//   border-bottom: 3px solid transparent;
-// }
+.nav-div a.inactive-menu {
+  border-bottom: 3px solid transparent;
+}
 
-// .nav-div a.active-menu {
-//   border-bottom: 3px solid var(--yellow);
-// }
+.nav-div a.active-menu {
+  border-bottom: 3px solid var(--yellow);
+}
 
 .footer-div {
   bottom: 0;
@@ -207,10 +207,10 @@ a {
   }
 }
 
-.about-main-div {
-  height: max-content;
-  width: 100%;
-}
+// .about-main-div {
+//   height: max-content;
+//   width: 100%;
+// }
 
 .mobile-about-div {
   display: flex;
@@ -268,6 +268,7 @@ a {
 .contact-me-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex: 1;
 }
 
@@ -305,7 +306,9 @@ a {
 .fs-form {
   display: grid;
   gap: 0.7em;
+  width: 100%;
   padding: 0.6em 0.8em;
+  max-width: 800px;
 }
 
 .fs-field {
@@ -420,6 +423,52 @@ a {
   border-radius: 0.3em;
 }
 
+//only show on desktop
+.about-main-div {
+  display: flex;
+  height: 100%;
+  flex: 1;
+}
+
+.about-side-panel {
+  border-right: $borders;
+  border-left: $borders;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-side-title {
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.7em 0.7em 0.7em 0;
+  border-bottom: $borders;
+}
+
+.side-contacts {
+  border-top: $borders;
+}
+
+.about-contact,
+ul.personal-li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+ul.personal-li {
+  list-style: none;
+  padding: 0.4em 0;
+  margin: 0;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+ul.personal-li li:hover {
+  color: var(--link-hover);
+}
+
 @media (width >= 768px) {
   .outlet-div {
     height: 100%;
@@ -460,9 +509,11 @@ a {
     border-right: $borders;
   }
 
-  // .about-main-div {
-  //   display: flex;
-  // }
+  .owner-name,
+  .about-side-panel {
+    width: 20%;
+    max-width: 300px;
+  }
 
   .projects-grid {
     grid-template-columns: 1fr 1fr;
