@@ -68,7 +68,12 @@ const Projects = () => {
   ];
   return (
     <div className="projects-main-div">
-      <span className="projects-mobile-header">_projects</span>
+      <span
+        className="projects-mobile-header"
+        style={{ display: "block", marginBottom: "0.5em" }}
+      >
+        _projects
+      </span>
       <div className="projects-grid">
         {works.map((work, index) => (
           <Project key={index} index={index} work={work} />
