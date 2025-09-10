@@ -258,6 +258,15 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  height: 100%;
+  flex: 1;
+}
+
+.contacts-inner-div,
+.contacts-side-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 #contact-form {
@@ -297,18 +306,12 @@ a {
 //   gap: 10px;
 // }
 
-// @media (width < 768px) {
-//   .nav-div {
-//     justify-content: space-between;
-//   }
-// }
-
 .fs-form {
   display: grid;
   gap: 0.7em;
   width: 100%;
   padding: 0.6em 0.8em;
-  max-width: 800px;
+  max-width: 500px;
 }
 
 .fs-field {
@@ -362,6 +365,10 @@ a {
 .contact-succeeded-p {
   color: white;
   font-size: 1.2rem;
+}
+
+.code-show {
+  display: none;
 }
 
 .projects-main-div {
@@ -516,6 +523,20 @@ ul.personal-li li:hover {
     }
   }
 
+  .contacts-inner-div {
+    flex-direction: row;
+    flex: 1 1 auto;
+    // margin-top: 0.5em;
+    // padding-top: 0.5em;
+    border-top: $borders;
+  }
+
+  .contacts-side-div {
+    // width: 30%;
+    // height: 100%;
+    border-right: $borders;
+  }
+
   .home-div-2 {
     display: flex;
     flex-direction: column;
@@ -529,9 +550,11 @@ ul.personal-li li:hover {
   }
 
   .owner-name,
-  .about-side-panel {
+  .about-side-panel,
+  .contacts-side-div {
     width: 20%;
-    max-width: 300px;
+    min-width: 270px;
+    max-width: 350px;
   }
 
   .projects-mobile-header {
@@ -543,7 +566,7 @@ ul.personal-li li:hover {
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 1240px) {
   // body {
   //   height: 100dvh;
   //   width: 100dvw;
@@ -561,4 +584,31 @@ ul.personal-li li:hover {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 1.3em;
   }
+
+  .code-show {
+    display: flex;
+    flex: 1;
+    border-left: $borders;
+  }
+
+  .contacts-other-side {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
+    display: flex;
+    flex: 1 1 auto;
+    padding: 0.5em;
+  }
+
+  .contact-me-div {
+    flex-direction: column;
+  }
+
+  // body {
+  //   height: 100dvh;
+  // }
+
+  // .outlet-div {
+  //   overflow-y: scroll;
+  // }
 }

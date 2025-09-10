@@ -11,19 +11,19 @@ const Footer = () => {
       <div className="footer-div">
         <div className="footer-div-1">
           <span>Find me in: </span>
-          <Link to="">
+          <Link target="_blank" to="https://x.com/Meet_JamesB">
             <span>
               <FaXTwitter />
             </span>
           </Link>
-          <Link to="">
+          <Link target="_blank" to="https://www.linkedin.com/in/barnabas-james">
             <span>
               <SlSocialLinkedin />
             </span>
           </Link>
         </div>
         <div className="footer-div-2">
-          <Link to="">
+          <Link target="_blank" to="https://github.com/Jamieeee1">
             <span className="footer-div-2-main">
               @Jamieeee1 <FaGithub />
             </span>
