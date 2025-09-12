@@ -2,6 +2,7 @@ import React from "react";
 import "./CodeDisplay.scss";
 
 const CodeDisplay = ({ code, language = "javascript", className = "" }) => {
+  // console.log(code);
   const lines = code.split("\n");
 
   const highlightJavaScript = (line) => {

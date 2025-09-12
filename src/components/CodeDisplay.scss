@@ -4,6 +4,10 @@ $vscode-text: #d4d4d4;
 $vscode-line-numbers: #858585;
 $vscode-border: #2d2d30;
 
+* {
+  box-sizing: border-box;
+}
+
 // Syntax colors
 $color-keyword: rgba(97, 95, 255, 1);
 $color-string: rgba(255, 184, 106, 1);
@@ -33,10 +37,11 @@ $color-property: #9cdcfe;
   &__line-numbers {
     // background-color: $vscode-bg;
     // color: $vscode-line-numbers;
-    padding: 16px 8px 16px 16px;
+    padding: 1em 1em 1em 1em;
     text-align: right;
     user-select: none;
     border-right: 1px solid $vscode-border;
+    margin-right: 0.5em;
     font-size: 1rem;
     line-height: 1.5;
     min-width: 40px;
@@ -60,7 +65,7 @@ $color-property: #9cdcfe;
       align-items: center;
       white-space: pre;
       font-family: inherit;
-      color: $color-keyword;
+      // color: $color-keyword;
     }
   }
 
