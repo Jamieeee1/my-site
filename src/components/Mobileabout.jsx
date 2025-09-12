@@ -95,7 +95,6 @@ const Mobileabout = () => {
                 flexDirection: "column",
                 gap: "0.8em",
                 marginLeft: "1.3em",
-                // paddingTop: "1em",
               }}
             >
               <li> Coding </li>
@@ -106,15 +105,6 @@ const Mobileabout = () => {
           </div>
         )}
       </div>
-      {/* <div className="mobile-about-minidivs">
-        <span
-          className="mobile-about-bottons"
-          onClick={() => toggle("contacts")}
-        >
-          {" "}
-          {isOpen.contacts ? <FaAngleDown /> : <FaAngleRight />} Contacts
-        </span>
-      </div> */}
     </div>
   );
 };
