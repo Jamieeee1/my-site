@@ -17,9 +17,7 @@ const Desktopabout = () => {
             className="about-side-title"
             style={{ cursor: "pointer", color: "#f8fafc" }}
           >
-            <span className="about-side-icons">
-              <FaArrowDown />
-            </span>
+            <span className="about-side-icons"></span>
             personal-info
           </span>
           <ul className="personal-li">
