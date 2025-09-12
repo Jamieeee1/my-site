@@ -57,7 +57,7 @@ const Projects = () => {
     {
       name: "Random Quote Generator",
       description:
-        "A random quote is generated using once the site is loaded and also on request. This is done with the asistance of a restful api ",
+        "A random quote is generated using once the site is loaded and also on-request. ",
       stack: ["HTML5", "JavaScript", "CSS3", "React"],
       liveSite: "https://random-quote-react-one.vercel.app/",
       githubrepo:
