@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 
-// const spans = ["personal", "professional", "hobbies", "contacts"];
-
 const Mobileabout = () => {
   const [isOpen, setisOpen] = useState({
     personal: false,

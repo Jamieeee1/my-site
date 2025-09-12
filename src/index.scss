@@ -182,6 +182,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3em;
+  padding-left: 1em;
 
   h1 {
     color: var(--my-name);
@@ -251,7 +252,8 @@ a {
 }
 
 .mobile-about-inner p {
-  text-align: justify;
+  // text-align: justify;
+  text-align: left;
   padding: 0.5em;
 }
 
