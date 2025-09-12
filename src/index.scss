@@ -213,11 +213,6 @@ a {
   }
 }
 
-// .about-main-div {
-//   height: max-content;
-//   width: 100%;
-// }
-
 .mobile-about-div {
   display: flex;
   flex-direction: column;
@@ -227,8 +222,8 @@ a {
 .mobile-about-header,
 .contact-mobile-header,
 .projects-mobile-header {
-  padding: 0.8em;
-  font-size: 1.2rem;
+  padding: 0.7em;
+  font-size: 1.1rem;
 }
 
 .mobile-about-bottons,
@@ -291,26 +286,6 @@ a {
   padding: 0.5em;
   gap: 0.3em;
 }
-
-// .about-nav {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .personal-li {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   flex-direction: column;
-//   gap: 10px;
-//   li {
-//   }
-// }
-
-// .about-contact {
-//   flex-direction: column;
-//   gap: 10px;
-// }
 
 .fs-form {
   display: grid;
@@ -533,10 +508,6 @@ ul.personal-li li:hover {
   color: var(--link-hover);
 }
 
-// .about-code-snippet {
-//   max-width: 100%;
-// }
-
 @media (width >= 768px) {
   .outlet-div {
     height: 100%;
@@ -609,19 +580,6 @@ ul.personal-li li:hover {
 }
 
 @media (width >= 1240px) {
-  // body {
-  //   height: 100dvh;
-  //   width: 100dvw;
-  // }
-  // #root {
-  //   height: 100%;
-  //   width: 100%;
-  // }
-
-  // .about-nav {
-  //   max-width: 250px;
-  // }
-
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 1.3em;
@@ -634,9 +592,6 @@ ul.personal-li li:hover {
   }
 
   .contacts-other-side {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr;
     display: flex;
     flex: 1 1 auto;
     padding: 0.5em;
@@ -644,6 +599,11 @@ ul.personal-li li:hover {
 
   .contact-me-div {
     flex-direction: column;
+  }
+
+  .interest-headers {
+    font-weight: 600;
+    font-style: italic;
   }
 
   .about-side-container {
@@ -704,11 +664,6 @@ ul.personal-li li:hover {
     padding-left: 1em;
   }
 
-  .code-icons {
-    // width: 1rem;
-    // height: 1rem;
-  }
-
   .about-code-top {
     display: flex;
     justify-content: space-between;
@@ -729,21 +684,4 @@ ul.personal-li li:hover {
     padding-top: 0.5em;
     font-size: 0.7rem;
   }
-
-  // body {
-  //   height: 100dvh;
-  // }
-
-  // .outlet-div {
-  //   overflow-y: scroll;
-  // }
 }
-
-// pre,
-// code {
-//   background-color: var(--snippet-backdrop);
-//   border-radius: 0.4em; // optional: rounded corners
-//   padding: 0.8em; // optional: space inside code block
-//   font-family: "Fira Code", monospace;
-//   font-size: 1em;
-// }

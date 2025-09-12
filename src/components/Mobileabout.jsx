@@ -67,7 +67,7 @@ const Mobileabout = () => {
         </span>
 
         {isOpen.professional && (
-          <div className="mobile-about-minidivs">
+          <div className="mobile-about-inner">
             <p>
               As a recent graduate in Mechanical Engineering, I am actively
               building my professional foundation through hands on practice and
@@ -86,6 +86,25 @@ const Mobileabout = () => {
           {" "}
           {isOpen.hobbies ? <FaAngleDown /> : <FaAngleRight />} Hobbies
         </span>
+
+        {isOpen.hobbies && (
+          <div className="mobile-about-inner">
+            <ul
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.8em",
+                marginLeft: "1.3em",
+                // paddingTop: "1em",
+              }}
+            >
+              <li> Coding </li>
+              <li>Reading</li>
+              <li>Gaming</li>
+              <li>Watching sports</li>
+            </ul>
+          </div>
+        )}
       </div>
       {/* <div className="mobile-about-minidivs">
         <span
